@@ -1,0 +1,23 @@
+{
+  "name": "pixi-monorepo",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "viewer"
+  ],
+  "scripts": {
+    "build": "turbo run build --filter @ixi-starter/* ",
+    "dev": "turbo run dev --filter @pixi-starter/*  --parallel",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "turbo": "^1.11.3",
+    "tsup": "^8.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "pixi.js": "^7.3.3"
+  }
+}

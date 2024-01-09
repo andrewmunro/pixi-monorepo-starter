@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"outDir": "./dist"
+	},
+	"exclude": ["node_modules", "build", "dist", ".turbo"],
+	"extends": "../tsconfig.json"
+}
